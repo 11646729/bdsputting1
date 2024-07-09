@@ -9,24 +9,22 @@ import SwiftUI
 
 struct ExpressDataEntryView: View {
     var body: some View {
-        NavigationView{
-            VStack {
-                
-                // Header
-                VStack{
-                    Text("Person's Name")
-                        .font(.system(size: 20))
-                        .bold()
-                }
-                                
-                // Data Entry Form
-                VStack{
-                    Form{
-                        HStack{
-                            
-                        }
-
+        VStack {
+            
+            // Header
+            VStack{
+                Text("Person's Name")
+                    .font(.system(size: 20))
+                    .bold()
+            }
+            
+            // Data Entry Form
+            VStack{
+                Form{
+                    HStack{
+                        
                     }
+                    
                 }
             }
         }
