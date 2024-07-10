@@ -9,19 +9,26 @@ import SwiftUI
 
 struct BuyStackView: View {
     
+    let headerLogo : String
     let topText : String = "Hello Title"
     let bodyText : String = "Body text"
     let buttonText : String
     
+    //            let screenSize: CGRect = UIScreen.main.bounds
+    //            let screenWidth = screenSize.size.width
+    //            let screenHeight = screenSize.size.height
+
     var body: some View {
-        VStack(spacing: 20) {
+
+        VStack {
+            // Header Logo
+            Image(headerLogo)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 150.0, height: 100.0)
+                .offset(y: -20)
             
-            //            let screenSize: CGRect = UIScreen.main.bounds
-            //            let screenWidth = screenSize.size.width
-            //            let screenHeight = screenSize.size.height
-            
-            VStack {
-                                
+            VStack(spacing: 20) {
                 RoundedRectangle(cornerRadius: 5.0)
                     .stroke(Color.yellow, lineWidth: 1)
                     .frame(width: 400, height: 150)
@@ -31,29 +38,28 @@ struct BuyStackView: View {
 //                    .frame(width: 400, height: 80, alignment: .center)
                     .font(.system(size: 20))
                     .bold()
-                    .offset(y: -130)
-                
+//                    .offset(y: -130)
+
                 // Display text
                 Text(bodyText)
-                    .frame(width: 360, height: 100, alignment: .center)
+//                    .frame(width: 360, height: 100, alignment: .center)
                     .font(.system(size: 18))
-                    .offset(y: -40)
+//                    .offset(y: -40)
                 
                 Spacer()
-                
             }
             
-            RoundedRectangle(cornerRadius: 5.0)
-                .stroke(Color.yellow, lineWidth: 1)
-                .frame(width: 400, height: 150)
-            
-            RoundedRectangle(cornerRadius: 5.0)
-                .stroke(Color.yellow, lineWidth: 1)
-                .frame(width: 400, height: 150)
-            
-            RoundedRectangle(cornerRadius: 5.0)
-                .stroke(Color.yellow, lineWidth: 1)
-                .frame(width: 400, height: 150)
+//            RoundedRectangle(cornerRadius: 5.0)
+//                .stroke(Color.yellow, lineWidth: 1)
+//                .frame(width: 400, height: 150)
+//            
+//            RoundedRectangle(cornerRadius: 5.0)
+//                .stroke(Color.yellow, lineWidth: 1)
+//                .frame(width: 400, height: 150)
+//            
+//            RoundedRectangle(cornerRadius: 5.0)
+//                .stroke(Color.yellow, lineWidth: 1)
+//                .frame(width: 400, height: 150)
             
             // Display Button to LoginView screen
             NavigationLink(destination: LoginView()) {
@@ -73,5 +79,5 @@ struct BuyStackView: View {
 }
 
 #Preview {
-    BuyStackView(buttonText: "I'm Stacked, Sign In ")
+    BuyStackView(headerLogo: "TheStack_type_and_shield", buttonText: "I'm Stacked, Sign In ")
 }

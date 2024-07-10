@@ -11,7 +11,7 @@ struct NewSessionView: View {
     
     @State var technique = ""
     
-    let headingText : String
+    let headerText : String
     let completeSessionText : String
     let expressSessionText : String
     
@@ -19,7 +19,7 @@ struct NewSessionView: View {
         // Startup Type Selection Form
         VStack{
             Form{
-                Text(headingText)
+                Text(headerText)
                     .padding(.vertical, 8)
                     .font(.system(size: 20))
                     .bold()
@@ -78,5 +78,5 @@ struct NewSessionView: View {
 }
 
 #Preview {
-    NewSessionView(headingText: "Start a New Session", completeSessionText: "Start Complete Session", expressSessionText: "Start Express Session")
+    NewSessionView(headerText: "Start a New Session", completeSessionText: "Start Complete Session", expressSessionText: "Start Express Session")
 }

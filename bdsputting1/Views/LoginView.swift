@@ -48,7 +48,7 @@ struct LoginView: View {
                 VStack {
                     Text("New around here?")
 
-                    NavigationLink("Create An Account", destination:     NewSessionView(headingText: "Start a New Session", completeSessionText: "Start Complete Session", expressSessionText: "Start Express Session")
+                    NavigationLink("Create An Account", destination:     NewSessionView(headerText: "Start a New Session", completeSessionText: "Start Complete Session", expressSessionText: "Start Express Session")
                     )
                 }
                 

@@ -62,7 +62,7 @@ struct Intro4View: View {
                 .multilineTextAlignment(.center)
                 
                 // Display Button to LoginView screen
-                NavigationLink(destination: BuyStackView(buttonText: "I'm Stacked, Sign In ")) {
+                NavigationLink(destination: BuyStackView(headerLogo: "TheStack_type_and_shield", buttonText: "I'm Stacked, Sign In ")) {
                     (
                         Text(buttonText)
                         +
