@@ -30,15 +30,14 @@ struct Intro1View: View {
                 Image(headerLogo)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 150.0, height: 100.0)
-                    .offset(y: -60)
+                    .frame(width: 150.0, height: 100.0, alignment: .top)
                 
                 VStack {
                     // Display Top Image
                     Image(topImage)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 400.0, height: 300.0)
+                        .frame(width: 400.0, height: 300.0, alignment: .top)
                         .clipShape(RoundedRectangle(cornerRadius: 5))
                         .offset(x: 1, y: -46)
                     

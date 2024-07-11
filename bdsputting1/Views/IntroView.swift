@@ -31,8 +31,7 @@ struct IntroView: View {
                     Image(headerLogo)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 150.0, height: 100.0)
-                        .offset(y: -20)
+                        .frame(width: 150.0, height: 100.0, alignment: .top)
                     
                     VStack {
                         // Display Top Image
@@ -78,6 +77,7 @@ struct IntroView: View {
         }
     }
 }
+
 
 #Preview {
     IntroView(headerLogo: "TheStack_type_and_shield", topImage: "IntroPicture1", topText: "Complete System for Biohacking Your Clubhead Speed", bottomText: "Speed training that works. Customizable hardware, protocols proven on Tour, and training made simple with TheStack App", buttonText: "Continue ")
