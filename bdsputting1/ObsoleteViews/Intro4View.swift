@@ -9,17 +9,12 @@ import SwiftUI
 
 struct Intro4View: View {
     
-    let headerLogo : String
     let topImage: String
     let topText: String
     let bottomText: String
-    let buttonText : String
 
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 5.0)
-                .fill(Color.white)
-            
             RoundedRectangle(cornerRadius: 5.0)
                 .stroke(Color.yellow, lineWidth: 3)
                 .frame(width: 400, height: 600)
@@ -29,11 +24,13 @@ struct Intro4View: View {
             
             VStack {
                 // Header Logo
-                Image(headerLogo)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 150.0, height: 100.0)
-                    .offset(y: -60)
+                LogoView()
+                
+//                Image(headerLogo)
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+//                    .frame(width: 150.0, height: 100.0)
+//                    .offset(y: -60)
                 
                 VStack {
                     // Display Top Image
@@ -62,25 +59,24 @@ struct Intro4View: View {
                 .multilineTextAlignment(.center)
                 
                 // Display Button to LoginView screen
-                NavigationLink(destination: BuyStackView(headerLogo: "TheStack_type_and_shield", buttonText: "I'm Stacked, Sign In ")) {
-                    (
-                        Text(buttonText)
-                        +
-                        Text(Image(systemName: "arrow.right"))
-                    )
-                    .bold()
-                    .frame(width: 340, height: 40, alignment: .center)
-                    .background(Color.yellow)
-                    .foregroundColor(Color.black)
-                    .cornerRadius(5)
-                    .offset(y: -20)
-                }
+//                NavigationLink(destination: BuyStackView(headerLogo: "TheStack_type_and_shield", buttonText: "I'm Stacked, Sign In ")) {
+//                    (
+//                        Text(buttonText)
+//                        +
+//                        Text(Image(systemName: "arrow.right"))
+//                    )
+//                    .bold()
+//                    .frame(width: 340, height: 40, alignment: .center)
+//                    .background(Color.yellow)
+//                    .foregroundColor(Color.black)
+//                    .cornerRadius(5)
+//                    .offset(y: -20)
+//                }
             }
         }
     }
 }
 
 #Preview {
-    Intro4View(headerLogo: "TheStack_type_and_shield", topImage: "MattFitzpatrick", topText: "Matt Fitzpatrick after winning the 2022 US Open", bottomText: "Sasho MacKenzie gave me TheStack. I've been doing it religiously. It's like going to the gym basically ... and I'll be honest, it's worked wonders.", buttonText: "Continue ")
-
+    Intro4View(topImage: "MattFitzpatrick", topText: "Matt Fitzpatrick after winning the 2022 US Open", bottomText: "Sasho MacKenzie gave me TheStack. I've been doing it religiously. It's like going to the gym basically ... and I'll be honest, it's worked wonders.")
 }
