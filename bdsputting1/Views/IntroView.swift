@@ -27,10 +27,9 @@ struct IntroView: View {
                     // Display Top Image
                     Image(topImage)
                         .resizable()
-//                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 397.0, height: 297.0, alignment: .topLeading)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 400.0, height: 300.0, alignment: .topLeading)
                         .clipShape(RoundedRectangle(cornerRadius: 5))
-                        .offset(y: 3)
                     
                     // Display Heading Text
                     Text(topText)

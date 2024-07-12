@@ -12,7 +12,7 @@ struct Intro4View: View {
     let topImage: String
     let topText: String
     let bottomText: String
-
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 5.0)
@@ -20,60 +20,48 @@ struct Intro4View: View {
                 .frame(width: 400, height: 600)
                 .offset(y: -40)
             
-            // Hello
-            
             VStack {
                 // Header Logo
                 LogoView()
-                
-//                Image(headerLogo)
-//                    .resizable()
-//                    .aspectRatio(contentMode: .fit)
-//                    .frame(width: 150.0, height: 100.0)
-//                    .offset(y: -60)
                 
                 VStack {
                     // Display Top Image
                     Image(topImage)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(width: 400.0, height: 300.0)
-                        .clipShape(RoundedRectangle(cornerRadius: 5))
-                        .offset(x: 1, y: -46)
+                        .frame(width: 400.0, height: 300.0, alignment: .top)
+                        .offset(y: -20)
                     
                     // Display Heading Text
                     Text(topText)
                         .frame(width: 400, height: 80, alignment: .center)
                         .font(.system(size: 20))
                         .bold()
-                        .offset(y: -40)
                     
                     // Display text
                     Text(bottomText)
                         .frame(width: 360, height: 100, alignment: .center)
                         .font(.system(size: 18))
-                        .offset(y: -40)
                     
+                    NavigationLink(destination: LoginView()) {
+                        (
+                            Text("Login ")
+                            +
+                            Text(Image(systemName: "arrow.right"))
+                        )
+                        .bold()
+                        .frame(width: 340, height: 40, alignment: .center)
+                        .background(Color.yellow)
+                        .foregroundColor(Color.black)
+                        .cornerRadius(5)
+                    }
+
                     Spacer()
                 }
                 .multilineTextAlignment(.center)
-                
-                // Display Button to LoginView screen
-//                NavigationLink(destination: BuyStackView(headerLogo: "TheStack_type_and_shield", buttonText: "I'm Stacked, Sign In ")) {
-//                    (
-//                        Text(buttonText)
-//                        +
-//                        Text(Image(systemName: "arrow.right"))
-//                    )
-//                    .bold()
-//                    .frame(width: 340, height: 40, alignment: .center)
-//                    .background(Color.yellow)
-//                    .foregroundColor(Color.black)
-//                    .cornerRadius(5)
-//                    .offset(y: -20)
-//                }
             }
         }
+
     }
 }
 

@@ -30,7 +30,6 @@ struct Intro1View: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 400.0, height: 300.0, alignment: .top)
-                        .offset(y: 3)
                     
                     // Display Heading Text
                     Text(topText)
