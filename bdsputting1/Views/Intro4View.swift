@@ -18,7 +18,7 @@ struct Intro4View: View {
             RoundedRectangle(cornerRadius: 5.0)
                 .stroke(Color.yellow, lineWidth: 3)
                 .frame(width: 400, height: 600)
-                .offset(y: -40)
+                .offset(y: -20)
             
             VStack {
                 // Header Logo
@@ -30,7 +30,7 @@ struct Intro4View: View {
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 400.0, height: 300.0, alignment: .top)
-                        .offset(y: -20)
+                        .offset(x: 1, y: 3)
                     
                     // Display Heading Text
                     Text(topText)
@@ -40,7 +40,7 @@ struct Intro4View: View {
                     
                     // Display text
                     Text(bottomText)
-                        .frame(width: 360, height: 100, alignment: .center)
+                        .frame(width: 360, height: 80, alignment: .center)
                         .font(.system(size: 18))
                     
                     NavigationLink(destination: LoginView()) {
