@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LogoView: View {
     
-    var headerLogo: String = "EditedLogo" // "TheStack_type_and_shield"
+    var headerLogo: String = "TheStack_type_and_shield" // "EditedLogo"
     
     var body: some View {
         Spacer(minLength: 10)
