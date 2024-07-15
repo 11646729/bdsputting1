@@ -43,7 +43,7 @@ struct Intro4View: View {
                         .frame(width: 360, height: 80, alignment: .center)
                         .font(.system(size: 18))
                     
-                    NavigationLink(destination: LoginView()) {
+                    NavigationLink(destination: BuyStackView(headerLogo: "TheStack_type_and_shield", buttonText: "I'm Stacked, Sign In ")) {
                         (
                             Text("Login ")
                             +
@@ -55,13 +55,13 @@ struct Intro4View: View {
                         .foregroundColor(Color.black)
                         .cornerRadius(5)
                     }
-
+                    
                     Spacer()
                 }
                 .multilineTextAlignment(.center)
             }
         }
-
+        
     }
 }
 
