@@ -14,6 +14,7 @@ struct IntroView: View {
     let bottomText: String
     
     var body: some View {
+        
         ZStack {
             RoundedRectangle(cornerRadius: 5.0)
                 .stroke(Color.yellow, lineWidth: 3)
@@ -21,9 +22,11 @@ struct IntroView: View {
                 .offset(y: -20)
             
             VStack {
+                // Header Logo
                 LogoView()
                 
                 VStack {
+                    
                     // Display Top Image
                     Image(topImage)
                         .resizable()
@@ -45,12 +48,12 @@ struct IntroView: View {
                     
                     Spacer()
                 }
-                //                }
                 .multilineTextAlignment(.center)
             }
         }
     }
 }
+
 
 
 

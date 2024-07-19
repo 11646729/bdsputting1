@@ -14,15 +14,11 @@ struct BuyStackView: View {
 
     var body: some View {
 
+        // Header Logo
+        LogoView()
+//            .navigationBarBackButtonHidden(true)
+        
         VStack {
-            // Header Logo
-            Image(headerLogo)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 150.0, height: 80.0)
-                .offset(y: -20)
-            
-//            Spacer()
             
             VStack {
                 SmallAreaView1(topText: "I want to use Stack Putting", bodyText: "I want to purchase a subscription to Stack Putting separately from TheStack hardware.", buttonText: "Buy Now / Redeem Code")
@@ -37,7 +33,7 @@ struct BuyStackView: View {
             Spacer()
             
             // Display Button to LoginView screen
-            NavigationLink(destination: LoginView()) {
+            NavigationLink(destination: WaiversView(headerLogo: "TheStack_type_and_shield", headerText: "Training Disclaimer & Waivers", buttonText: "I Accept")) {
                 (
                     Text(buttonText)
                     +
@@ -119,18 +115,9 @@ struct SmallAreaView2: View {
         ZStack {
             RoundedRectangle(cornerRadius: 11)
             .stroke(Color(.yellow), lineWidth: 1)
-                .frame(width: 400, height: 160)
+                .frame(width: 400, height: 180)
             
             VStack {
-                
-                // Display Heading Text
-                if topText != "" {
-                    Text(topText)
-                        .font(.system(size: 14))
-                        .bold()
-                        .foregroundColor(Color.black)
-                        .offset(y: 45)
-                }
                 
                 // Display Body Text
                 Text(bodyText)
