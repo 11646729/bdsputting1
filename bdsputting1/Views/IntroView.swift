@@ -16,6 +16,10 @@ struct IntroView: View {
     var body: some View {
         
         ZStack {
+            
+            Color(#colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.937254902, alpha: 1))
+                .ignoresSafeArea(.all)
+
             RoundedRectangle(cornerRadius: 5.0)
                 .stroke(Color.yellow, lineWidth: 3)
                 .frame(width: 400, height: 600, alignment: .top)

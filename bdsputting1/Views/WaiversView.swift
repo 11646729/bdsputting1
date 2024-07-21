@@ -16,6 +16,8 @@ struct WaiversView: View {
     
     var body: some View {
 
+        Spacer(minLength: 10)
+        
         // Header Logo
         LogoView()
 
@@ -67,23 +69,4 @@ struct WaiversView: View {
 
 #Preview {
     WaiversView(headerLogo: "TheStack_type_and_shield", headerText: "Training Disclaimer & Waivers", buttonText: "I Accept")
-}
-
-struct HeadingLineView: View {
-    
-    let headerText : String
-    
-    var body: some View {
-        HStack {
-            Text(headerText)
-                .padding(.horizontal, 0)
-                .font(.system(size: 20))
-                .bold()
-            
-            Spacer()
-            
-            Image(systemName: "xmark.circle")
-        }
-        .padding(.horizontal, 25)
-    }
 }
