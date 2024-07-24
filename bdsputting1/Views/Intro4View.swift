@@ -18,7 +18,7 @@ struct Intro4View: View {
             // Display Top Image
             Image(topImage)
                 .resizable()
-                .aspectRatio(contentMode: .fill)
+                .aspectRatio(contentMode: .fit)
                 .frame(width: 400.0, height: 315.0, alignment: .top)
                 .padding(.bottom, 20)
             
@@ -32,7 +32,8 @@ struct Intro4View: View {
             Text(bottomText)
                 .frame(width: 360, height: 80, alignment: .center)
                 .font(.system(size: 18))
-
+                .padding(.bottom, 10)
+            
             NavigationLink(destination: BuyStackView(headerLogo: "TheStack_type_and_shield", buttonText: "I'm Stacked, Sign In ")) {
                 (
                     Text("Login ")
@@ -45,7 +46,7 @@ struct Intro4View: View {
                 .foregroundColor(Color.black)
                 .cornerRadius(5)
             }
-            
+
             Spacer()
         }
         .multilineTextAlignment(.center)
