@@ -16,7 +16,6 @@ struct LogoView: View {
         VStack {
             Image(headerLogo)
                 .resizable()
-            //                    .edgesIgnoringSafeArea(.top)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 120.0, height: 80.0, alignment: .top)
             

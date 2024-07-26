@@ -16,6 +16,9 @@
 		47377DD02C2C9E97003771A7 /* ExpressDataEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47377DCF2C2C9E97003771A7 /* ExpressDataEntryView.swift */; };
 		4768CCF62C2F3C8B00BF4ABD /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4768CCF52C2F3C8B00BF4ABD /* IntroView.swift */; };
 		476A90292C2E9B0100572371 /* NewSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476A90282C2E9B0100572371 /* NewSessionView.swift */; };
+		4780A3072C538F72000DC00E /* SmallArea1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4780A3062C538F72000DC00E /* SmallArea1View.swift */; };
+		4780A3092C5390F5000DC00E /* SmallArea2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4780A3082C5390F5000DC00E /* SmallArea2View.swift */; };
+		4780A30B2C5397C2000DC00E /* SmallArea3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4780A30A2C5397C2000DC00E /* SmallArea3View.swift */; };
 		478840AD2C41131A004D8A5B /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478840AC2C41131A004D8A5B /* LogoView.swift */; };
 		478840AF2C411C13004D8A5B /* IntroTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478840AE2C411C13004D8A5B /* IntroTabView.swift */; };
 		47889CFA2C309A6A007A105B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47889CF92C309A6A007A105B /* Launch Screen.storyboard */; };
@@ -44,6 +47,9 @@
 		47377DCF2C2C9E97003771A7 /* ExpressDataEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressDataEntryView.swift; sourceTree = "<group>"; };
 		4768CCF52C2F3C8B00BF4ABD /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		476A90282C2E9B0100572371 /* NewSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionView.swift; sourceTree = "<group>"; };
+		4780A3062C538F72000DC00E /* SmallArea1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallArea1View.swift; sourceTree = "<group>"; };
+		4780A3082C5390F5000DC00E /* SmallArea2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallArea2View.swift; sourceTree = "<group>"; };
+		4780A30A2C5397C2000DC00E /* SmallArea3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallArea3View.swift; sourceTree = "<group>"; };
 		478840AC2C41131A004D8A5B /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		478840AE2C411C13004D8A5B /* IntroTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroTabView.swift; sourceTree = "<group>"; };
 		47889CF92C309A6A007A105B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -90,6 +96,9 @@
 				47F99B432C465D1C006429B9 /* WaiversView.swift */,
 				472562082C4908A3000D2573 /* SignInView.swift */,
 				47C356EB2C4B90D500F5548D /* HeadingLineView.swift */,
+				4780A3062C538F72000DC00E /* SmallArea1View.swift */,
+				4780A3082C5390F5000DC00E /* SmallArea2View.swift */,
+				4780A30A2C5397C2000DC00E /* SmallArea3View.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -255,10 +264,13 @@
 				47033AF32C37F7F500E0D144 /* Intro4View.swift in Sources */,
 				47F99B442C465D1C006429B9 /* WaiversView.swift in Sources */,
 				47A710A12C36B04400BE023D /* Intro1View.swift in Sources */,
+				4780A3092C5390F5000DC00E /* SmallArea2View.swift in Sources */,
 				4736AD2D2C2F4417007A275A /* SplashView.swift in Sources */,
+				4780A30B2C5397C2000DC00E /* SmallArea3View.swift in Sources */,
 				472562092C4908A3000D2573 /* SignInView.swift in Sources */,
 				476A90292C2E9B0100572371 /* NewSessionView.swift in Sources */,
 				47E7F5E12C2A1E5E00ED474F /* RegisterViewViewModel.swift in Sources */,
+				4780A3072C538F72000DC00E /* SmallArea1View.swift in Sources */,
 				47B77E182C391E51000AC0F9 /* BuyStackView.swift in Sources */,
 				47377DD02C2C9E97003771A7 /* ExpressDataEntryView.swift in Sources */,
 				4798AF1C2C3EED9600A44F87 /* PersonTestView.swift in Sources */,
