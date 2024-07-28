@@ -22,7 +22,6 @@ struct HeadingLineView: View {
             
             Image(systemName: "xmark.circle")
         }
-        .padding(.horizontal, 25)
     }
 }
 
