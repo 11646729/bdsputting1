@@ -47,6 +47,7 @@ struct BuyStackView: View {
                     .padding(.top, 20)
                 }
             }
+            .padding(.top, 36)
         }
     }
 }
