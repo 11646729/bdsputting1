@@ -38,7 +38,7 @@ struct WaiversView: View {
                     .multilineTextAlignment(.leading)
                 
                 // Display Button to SignInView screen
-                NavigationLink(destination: SignInView()) {
+                NavigationLink(destination: SignInView(headerText: "Sign In", buttonText: " Sign in with Apple")) {
                     Text(buttonText)
                         .bold()
                         .frame(width: 340, height: 40, alignment: .center)
