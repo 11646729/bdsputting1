@@ -12,7 +12,8 @@ struct SignInView: View {
     let headerText : String
     let buttonText : String
     let signinText : String = "By signing in here you accept our Terms of Use and Privacy Policy linked below. Contact us at info@thestacksystem.com with any questions. Always use the same method to sign in to access your saved data."
-
+    let topImage: String = "SignInViewImage"
+    
     var body: some View {
         
         ZStack {
@@ -33,8 +34,13 @@ struct SignInView: View {
                     .font(.system(size: 14))
                     .fontWeight(.thin)
                     .padding([.leading, .trailing], 12)
-//                    .frame(width: 370, height: 420)
                     .multilineTextAlignment(.leading)
+
+                // Display SignIn Image
+                Image(topImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.all, 20)
 
                 Spacer()
 
