@@ -49,8 +49,8 @@ struct SignInView: View {
                     .underline()
                     .padding(.bottom, 20)
 
-                // Display Button to SignInView screen
-                NavigationLink(destination: ExpressDataEntryView()) {
+                // Display Button to SetupMyProfile1View screen
+                NavigationLink(destination: SetupMyProfile1View()) {
                     (
                         Text(Image(systemName: "apple.logo")) + Text("  ") + Text(buttonText)
                     )
