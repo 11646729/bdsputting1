@@ -9,8 +9,13 @@ import SwiftUI
 
 struct SetupMyProfile1View: View {
     
+    @State var fullName = ""
+    @State var authorisationValue = ""
+    @State private var canWeContactYou = true
+    
     let headerText : String = "Setup My Profile"
     let instructionsText : String = "Your biometrics will inform the A.I. and generate precision programming for you."
+
     var body: some View {
         
         ZStack {
@@ -39,8 +44,28 @@ struct SetupMyProfile1View: View {
                     .padding(.leading, 12)
                     .multilineTextAlignment(.leading)
 
-                
-                
+                TextField("Full Name", text: $fullName)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .font(.system(size: 18))
+                    .bold()
+                    .padding(.init(top: 10, leading: 10, bottom: 10, trailing: 12))
+                    .multilineTextAlignment(.leading)
+
+                TextField("Authorisation", text: $authorisationValue)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .font(.system(size: 18))
+                    .bold()
+                    .padding(.init(top: 0, leading: 10, bottom: 0, trailing: 12))
+                    .multilineTextAlignment(.leading)
+
+                HStack {
+//                    Text("Can we contact you?")
+//                    Text("Updates, offers, information")
+
+                    Toggle("Can we contact you?", isOn: $canWeContactYou)
+                        .padding(.all, 12)
+                }
+
                 Spacer()
             }
             .multilineTextAlignment(.center)
@@ -57,5 +82,5 @@ struct SetupMyProfile1View: View {
 }
 
 #Preview {
-    SetupMyProfile1View()
+    SetupMyProfile1View(fullName: "Brian Smith", authorisationValue: "4vfhcmkpk9@privaterelay.appleid.com")
 }
